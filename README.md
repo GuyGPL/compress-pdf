@@ -16,9 +16,9 @@ The frontend of the application is developed using Next.js, featuring a responsi
 
 ### Setting up Project
 
-2. Run `yarn install` or `npm install` to install dependencies.
-3. After installation, you can run the service locally using `yarn dev`.
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Run `yarn install` or `npm install` to install dependencies.
+2. After installation, you can run the service locally using `yarn dev`.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ### Libraries/Packages Used
 
