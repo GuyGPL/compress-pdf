@@ -1,0 +1,8 @@
+export const LOGO_URL = {
+    googleDrive:
+        "https://s3-alpha-sig.figma.com/img/b83c/3c8b/8e260520e2023e720d7803b1e58c96ae?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=p378YfPD0ML7MMrAUARWkbtvKwBQasoGETTtHN0SMbL720c7o~UtwdTAIi460U8c56v8iYVNikw~vc-8IFZnEfmmy-ilLdcHiDEIesswUHNK2q7H5B8LzJ7XIvr8vU2ZxA789FexjslxKAQ9hjRkp6ndAomlikGQJ6jv2rdLpnaj2S27ncBqv2GiqXbpXNw2UpgQnPsyrYUicHt6gkQVgtLviT7z20wlFuoz8yS3p9LOsbRnYmXyOWe5rOyaYBxMX5tdThbytJvVXfOh7Zjfn9QlY91vNcm2q92OKk0hDj0dhkj7UKGsu7XWy~iTB10Pt526WjgPx8EHNXwR2dPDBg__",
+    dropbox:
+        "https://s3-alpha-sig.figma.com/img/d17d/0262/1c07da0a2ef9081263afbe5ec8d30ceb?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gNch7O~s0ET58PzDfjeXphADvMkbf1U1Ss7Fu12xC0rW5kOunTl~jkcqYOu8R95byQtA6th7TE-829Wug533uCJK6uinXHt5Mwirm2fWDUclr4WFnyhhvrGZHFT7FsmPrsBGHysOzIeBwJAL0biHSOCZrGQAuAaEi0nC-2C1R2vY9NyVE5l8F3KpPhXAkLz3l69ZSVxLSMi38gJkzJjH27vktaFp9AoW9Ai6Dl1n8znD5cNWECLKnWIAyMIYt8~UnfGLZ2UgGN2nkc2PhswZCb2qsrP3GCYW0XDJT7dgAsHfOmYFke0BbLdyOpGFCqPrWxOMX-5gvKtuhAbriWHIOw__",
+    application:
+        "https://s3-alpha-sig.figma.com/img/d5d4/6cf4/622135fa2043947fe9d49317c4929c3e?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WPQhMoIsLr6yTzFiUMbm~D2XZ0yPEt9IPU3Ii9rq-rO49eWAVoat~90Hl788gYO0vdwmF2drfm9dTfTFbnq~8M8rUiqqmQryEWsBJg0MGTYgVgdD6yll6QP6Tm37N-pRUu0kUmIbM~wmP2SVmexSlkO-QQQTu8Xgf~egAebvnOlt4ZsoFdg8-rtMm4MYP~e7OAu2DFvrQghptKn2xQb6dMiRnMuiM8f54WyjAV2FqJKExh091qyCNqG3ISpkPfYNQ~c7kePkrcEEC7-JAmt50mK62z51vIQiXNrhVixnRhqKt6yv36glAV7RU11tRlhxeWgZ3PvRL7GdnhJMLF8~9w__",
+};
