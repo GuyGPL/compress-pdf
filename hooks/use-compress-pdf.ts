@@ -11,12 +11,10 @@ import {
 } from "../services/pdf-compress.service";
 
 type useCompressPDFReturnType = {
-    compressStatus: string;
     compressJobId: string | null;
     downloadUrl: string | undefined;
     isPendingUploadFiles: boolean;
     isPendingCompressFiles: boolean;
-    fetchDownloadFiles: () => void;
     deleteUploadFiles: (index: number) => void;
     handleUploadFiles: (files: FileWithPreview[]) => Promise<void>;
     handleCompressFiles: (
@@ -61,7 +59,7 @@ export function useCompressPDF(): useCompressPDFReturnType {
         enabled: !!compressJobId,
     });
 
-    const { data: downloadUrl, refetch: fetchDownloadFiles } = useQuery({
+    const { data: downloadUrl } = useQuery({
         queryKey: ["download-pdf", compressJobId],
         queryFn: async () => {
             const res = await fetchDownloadResults(compressJobId!);
@@ -93,11 +91,10 @@ export function useCompressPDF(): useCompressPDFReturnType {
     ): Promise<void> => {
         try {
             const body = { files: uploadFiles, mode: "normal", dpi, imageQuality, colorMode };
-            notificationInfo("Compressing...");
             await mutateAsyncCompressFiles(body);
             notificationSuccess("Compress File successfully");
         } catch (error) {
-            notificationError("Failed to compress file file, please try again");
+            notificationError("Failed to compress file, please try again");
         }
     };
 
@@ -108,12 +105,10 @@ export function useCompressPDF(): useCompressPDFReturnType {
     };
 
     return {
-        compressStatus,
         compressJobId,
         downloadUrl,
         handleUploadFiles,
         handleCompressFiles,
-        fetchDownloadFiles,
         deleteUploadFiles,
         isPendingUploadFiles,
         isPendingCompressFiles,

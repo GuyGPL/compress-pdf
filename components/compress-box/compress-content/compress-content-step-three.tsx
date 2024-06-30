@@ -16,7 +16,7 @@ import { useState } from "react";
 import { FileWithPreview } from "../compress-box";
 
 type CompressContentStepThreeProps = {
-    compressStatus: string;
+    isPendingCompressFiles: boolean;
     downloadUrl: string | undefined;
     filesWithPreviews: FileWithPreview[];
     downloadFiles: () => void;
@@ -24,7 +24,7 @@ type CompressContentStepThreeProps = {
 };
 
 const CompressContentStepThree: React.FC<CompressContentStepThreeProps> = ({
-    compressStatus,
+    isPendingCompressFiles,
     downloadUrl,
     filesWithPreviews,
     downloadFiles,
@@ -34,7 +34,7 @@ const CompressContentStepThree: React.FC<CompressContentStepThreeProps> = ({
 
     return (
         <Box display="flex" justifyContent="center" alignItems="center" minHeight="300px">
-            {compressStatus === "pending" ? (
+            {isPendingCompressFiles ? (
                 <CircularProgress />
             ) : (
                 <Box width={{ xs: "90%", sm: "60%", md: "50%" }}>

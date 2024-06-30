@@ -37,12 +37,8 @@ export default function CompressForm({
     };
 
     const handleFileCompression = async () => {
-        try {
-            await handleCompressFiles(dpi, imageQuality, colorMode);
-            setStep(3);
-        } catch (error) {
-            setStep(2);
-        }
+        handleCompressFiles(dpi, imageQuality, colorMode);
+        setStep(3);
     };
 
     return (

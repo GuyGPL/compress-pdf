@@ -27,7 +27,7 @@ export default function CompressBox(): ReactElement {
         deleteUploadFiles,
         handleCompressFiles,
         isPendingUploadFiles,
-        compressStatus,
+        isPendingCompressFiles,
     } = useCompressPDF();
 
     const { notificationInfo } = useNotification();
@@ -138,7 +138,7 @@ export default function CompressBox(): ReactElement {
                 return (
                     <CompressContentStepThree
                         filesWithPreviews={filesWithPreview}
-                        compressStatus={compressStatus}
+                        isPendingCompressFiles={isPendingCompressFiles}
                         handleOnRestart={handleOnRestart}
                         downloadUrl={downloadUrl}
                         downloadFiles={handleOnDownload}
