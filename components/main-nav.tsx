@@ -87,13 +87,13 @@ export default function MainNav() {
                 bgcolor="primary.600"
                 justifyContent="space-between"
                 alignItems="center"
-                direction="row"
+                direction={{ xs: "column", sm: "row" }}
                 px={{ xs: 5, lg: 16 }}
                 py={2}
                 spacing={2}
                 color="common.white"
             >
-                <Stack direction="row" spacing={1}>
+                <Stack direction={{ xs: "column", sm: "row" }} spacing={1}>
                     <Rating defaultValue={4.9} precision={0.1} />
                     <Typography variant="body1">4,9 (8,381 votes)</Typography>
                 </Stack>

@@ -19,7 +19,8 @@ export default function FeatureNavigation() {
     return (
         <Stack spacing={2} sx={{ py: 4 }}>
             <Grid
-                spacing={2}
+                columns={14}
+                gap={2}
                 container
                 sx={{
                     justifyContent: "space-around",
