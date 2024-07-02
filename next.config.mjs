@@ -4,10 +4,7 @@ const nextConfig = {
             config.resolve.alias['canvas'] = false;
 
         return config;
-    },
-    future: {
-        webpack5: true,
-    },
+    }
 };
 
 export default nextConfig;
