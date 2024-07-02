@@ -34,7 +34,7 @@ export const fetchCheckStatus = async (
 };
 
 export const fetchDownloadResults = async (jobId: string): Promise<AxiosResponse<Blob>> => {
-    return await axios.get("https://filetools13.pdf24.org/client.php?action=upload", {
+    return await axios.get("https://filetools13.pdf24.org/client.php", {
         params: { action: "downloadJobResult", mode: "download", jobId },
         responseType: "blob",
     });
